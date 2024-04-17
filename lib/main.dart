@@ -3470,7 +3470,8 @@ class _IconDisplayState extends State<IconDisplay> {
         padding: EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center, // Center content horizontally
+          crossAxisAlignment:
+              CrossAxisAlignment.center, // Center content horizontally
           children: [
             // Space between title and input field
             SizedBox(height: 20.0),
@@ -3508,17 +3509,16 @@ class _IconDisplayState extends State<IconDisplay> {
               ),
             ),
             SizedBox(height: 250.0),
-             Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: IconTheme(
-              data: IconThemeData(size: 100.0), // Increase icon size
-              child: getIcon(iconName),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconTheme(
+                data: IconThemeData(size: 100.0), // Increase icon size
+                child: getIcon(iconName),
+              ),
             ),
-          ),
           ],
         ),
       ),
     );
   }
-
 }
